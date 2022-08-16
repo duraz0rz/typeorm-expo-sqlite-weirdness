@@ -9,6 +9,7 @@
     "typescript": "4.5.2"
   },
   "dependencies": {
+    "expo-sqlite": "^10.3.0",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.11",
     "typeorm": "0.3.6"
