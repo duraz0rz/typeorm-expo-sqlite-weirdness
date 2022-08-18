@@ -1,13 +1,10 @@
-import "reflect-metadata";
 import { DataSource } from "typeorm";
-import * as SQLite from "expo-sqlite";
 import { CommonDataSourceOptions } from "./options.js";
 
 export const AppDataSource = new DataSource({
   ...CommonDataSourceOptions,
-  type: "expo",
-  driver: SQLite,
-  database: ":memory:",
+  type: "sqlite",
+  database: "src/migration/migration-database.sqlite",
   synchronize: true,
   logging: false,
 });
